@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Department Management — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">System Admin</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="users.html"><span>♟</span>Users</a>
+            <a class="side-link active" href="departments.html"><span>▦</span>Departments</a>
+            <a class="side-link " href="categories.html"><span>☷</span>Categories</a>
+            <a class="side-link " href="analytics.html"><span>▥</span>Analytics</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Department Management</b>
+                    <div class="muted" style="font-size:11px">Government departments and routing ownership</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">System Admin</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">S</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-title">
+                    <div>
+                        <h1>Departments</h1>
+                        <div class="muted">12 departments configured.</div>
+                    </div><button class="btn btn-primary">＋ Add Department</button>
+                </div>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>Road & Drainage</h3>
+                        <p class="muted">Handles roads, drains and waterlogging.</p><span
+                            class="badge badge-green">Active</span>
+                    </div>
+                    <div class="card">
+                        <h3>Waste Management</h3>
+                        <p class="muted">Garbage and waste complaints.</p><span class="badge badge-green">Active</span>
+                    </div>
+                    <div class="card">
+                        <h3>Electrical Services</h3>
+                        <p class="muted">Streetlight and related issues.</p><span
+                            class="badge badge-green">Active</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

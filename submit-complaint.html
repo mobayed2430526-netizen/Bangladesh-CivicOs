@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Submit a Civic Complaint — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Citizen</div><a class="side-link " href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link active" href="submit-complaint.html"><span>＋</span>Submit Complaint</a>
+            <a class="side-link " href="complaints.html"><span>▤</span>My Complaints</a>
+            <a class="side-link " href="points.html"><span>★</span>Civic Points</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Submit a Civic Complaint</b>
+                    <div class="muted" style="font-size:11px">Provide enough detail for the right department to act
+                    </div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Citizen</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">C</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-title">
+                    <div>
+                        <h1>Report a civic problem</h1>
+                        <div class="muted">Clear details help us route your complaint correctly.</div>
+                    </div>
+                </div>
+                <form onsubmit="demoSubmit(event,'Complaint submitted successfully — CIV-2026-00142')">
+                    <div class="two-col">
+                        <div class="panel">
+                            <h3>Complaint details</h3>
+                            <div class="field"><label>Complaint title *</label><input class="input" required
+                                    placeholder="e.g. Large pothole on Main Road"></div>
+                            <div class="form-row">
+                                <div class="field"><label>Category *</label><select class="select" required>
+                                        <option value="">Select category</option>
+                                        <option>Broken Road</option>
+                                        <option>Garbage</option>
+                                        <option>Waterlogging</option>
+                                        <option>Streetlight</option>
+                                        <option>Mosquito Problem</option>
+                                        <option>Other</option>
+                                    </select></div>
+                                <div class="field"><label>Priority</label><select class="select">
+                                        <option>Normal</option>
+                                        <option>High</option>
+                                        <option>Urgent</option>
+                                    </select></div>
+                            </div>
+                            <div class="field"><label>Description *</label><textarea class="textarea" required
+                                    placeholder="Describe what happened, how severe it is, and how it affects people..."></textarea>
+                            </div>
+                            <h3>Location</h3>
+                            <div class="form-row">
+                                <div class="field"><label>Area *</label><input class="input" required
+                                        placeholder="Mirpur"></div>
+                                <div class="field"><label>Ward *</label><input class="input" required placeholder="21">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="field"><label>Latitude</label><input class="input" placeholder="23.8103">
+                                </div>
+                                <div class="field"><label>Longitude</label><input class="input" placeholder="90.4125">
+                                </div>
+                            </div><button type="button" class="btn btn-light" data-toast="Map pin selected (demo)">📍
+                                Choose on Map</button>
+                        </div>
+                        <div>
+                            <div class="panel">
+                                <h3>Evidence</h3>
+                                <p class="muted" style="font-size:13px">Upload a photo or other useful evidence.</p>
+                                <input class="input" type="file" accept="image/*">
+                                <div
+                                    style="margin-top:18px;padding:30px;text-align:center;border:1px dashed var(--border);border-radius:12px;color:var(--muted)">
+                                    📷<br>Drag & drop or choose a file</div>
+                            </div>
+                            <div class="panel">
+                                <h3>Before submitting</h3>
+                                <div class="check">✓ Location is accurate</div>
+                                <div class="check">✓ Description is clear</div>
+                                <div class="check">✓ Evidence is relevant</div><button class="btn btn-primary"
+                                    style="width:100%;margin-top:18px">Submit Complaint</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

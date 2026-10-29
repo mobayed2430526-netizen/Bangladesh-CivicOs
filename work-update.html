@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Work Update — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Field Officer</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="assigned.html"><span>▤</span>Assigned Complaints</a>
+            <a class="side-link " href="complaint-details.html"><span>◉</span>Complaint Details</a>
+            <a class="side-link active" href="work-update.html"><span>✎</span>Work Update</a>
+            <a class="side-link " href="resolution.html"><span>✓</span>Resolution</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Work Update</b>
+                    <div class="muted" style="font-size:11px">Log field work performed on a complaint</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Field Officer</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">F</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="panel" style="max-width:800px">
+                    <h3>Update CIV-2026-00128</h3>
+                    <div class="field"><label>Work status</label><select class="select">
+                            <option>In Progress</option>
+                            <option>Resolved</option>
+                        </select></div>
+                    <div class="field"><label>Work performed</label><textarea class="textarea"
+                            placeholder="Describe inspection, actions taken, materials used, etc."></textarea></div>
+                    <div class="field"><label>Upload progress evidence</label><input class="input" type="file"
+                            accept="image/*"></div><button class="btn btn-primary" data-toast="Work update saved">Save
+                        Work Update</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

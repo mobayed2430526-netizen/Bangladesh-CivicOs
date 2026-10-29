@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Complaints — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Citizen</div><a class="side-link " href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="submit-complaint.html"><span>＋</span>Submit Complaint</a>
+            <a class="side-link active" href="complaints.html"><span>▤</span>My Complaints</a>
+            <a class="side-link " href="points.html"><span>★</span>Civic Points</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>My Complaints</b>
+                    <div class="muted" style="font-size:11px">Track every complaint you have submitted</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Citizen</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">C</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-title">
+                    <div>
+                        <h1>My Complaints</h1>
+                        <div class="muted">12 complaints in your account</div>
+                    </div><a class="btn btn-primary" href="submit-complaint.html">＋ New Complaint</a>
+                </div>
+                <div class="panel">
+                    <div class="filterbar"><input class="input search" data-filter="#complaintTable"
+                            placeholder="Search complaint ID or title..."><select class="select"
+                            style="max-width:180px">
+                            <option>All statuses</option>
+                            <option>In Progress</option>
+                            <option>Under Review</option>
+                            <option>Closed</option>
+                        </select><select class="select" style="max-width:180px">
+                            <option>All categories</option>
+                            <option>Road</option>
+                            <option>Garbage</option>
+                            <option>Waterlogging</option>
+                        </select></div>
+                    <div class="table-wrap">
+                        <table class="table" id="complaintTable">
+                            <thead>
+                                <tr>
+                                    <th>ID / Complaint</th>
+                                    <th>Category</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                    <th>Last update</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>CIV-2026-00128</b><br>Waterlogging near Ward 21</td>
+                                    <td>Waterlogging</td>
+                                    <td>Mirpur, Dhaka</td>
+                                    <td><span class="badge badge-blue">In Progress</span></td>
+                                    <td>Today</td>
+                                    <td><a class="btn btn-light btn-sm" href="complaint-details.html">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td><b>CIV-2026-00116</b><br>Broken streetlight</td>
+                                    <td>Streetlight</td>
+                                    <td>Uttara, Dhaka</td>
+                                    <td><span class="badge badge-yellow">Under Review</span></td>
+                                    <td>Yesterday</td>
+                                    <td><a class="btn btn-light btn-sm" href="complaint-details.html">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td><b>CIV-2026-00092</b><br>Garbage accumulation</td>
+                                    <td>Garbage</td>
+                                    <td>Dhanmondi, Dhaka</td>
+                                    <td><span class="badge badge-green">Closed</span></td>
+                                    <td>Aug 30</td>
+                                    <td><a class="btn btn-light btn-sm" href="complaint-details.html">View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

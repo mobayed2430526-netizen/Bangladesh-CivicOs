@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>New Complaints — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Department Manager</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link active" href="new-complaints.html"><span>▤</span>New Complaints</a>
+            <a class="side-link " href="review.html"><span>◉</span>Complaint Review</a>
+            <a class="side-link " href="assign-officer.html"><span>➜</span>Assign Officer</a>
+            <a class="side-link " href="officers.html"><span>👷</span>Officers</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>New Complaints</b>
+                    <div class="muted" style="font-size:11px">Complaints routed to your department</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Department Manager</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">D</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-title">
+                    <div>
+                        <h1>New Complaints</h1>
+                        <div class="muted">24 complaints are waiting for review or assignment.</div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="filterbar"><input class="input search" data-filter="#newTable"
+                            placeholder="Search..."><button class="btn btn-light">All categories</button><button
+                            class="btn btn-light">High priority</button></div>
+                    <table class="table" id="newTable">
+                        <thead>
+                            <tr>
+                                <th>Complaint</th>
+                                <th>Category</th>
+                                <th>Location</th>
+                                <th>Submitted</th>
+                                <th>Priority</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>CIV-2026-00142</b><br>Pothole on Main Road</td>
+                                <td>Broken Road</td>
+                                <td>Mirpur 10</td>
+                                <td>1h ago</td>
+                                <td><span class="badge badge-red">Urgent</span></td>
+                                <td><a class="btn btn-primary btn-sm" href="review.html">Review</a></td>
+                            </tr>
+                            <tr>
+                                <td><b>CIV-2026-00140</b><br>Blocked drainage</td>
+                                <td>Waterlogging</td>
+                                <td>Uttara</td>
+                                <td>3h ago</td>
+                                <td><span class="badge badge-yellow">High</span></td>
+                                <td><a class="btn btn-primary btn-sm" href="review.html">Review</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

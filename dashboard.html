@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Supervisor Dashboard — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Supervisor</div><a class="side-link active"
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="pending.html"><span>✓</span>Pending Verification</a>
+            <a class="side-link " href="verification.html"><span>◉</span>Verification Details</a>
+            <a class="side-link " href="reopened.html"><span>↻</span>Reopened Complaints</a>
+            <a class="side-link " href="escalations.html"><span>⚠</span>Escalations</a>
+            <a class="side-link " href="civic-points.html"><span>★</span>Civic Points</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Supervisor Dashboard</b>
+                    <div class="muted" style="font-size:11px">Verification, escalation & quality control</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Supervisor</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">S</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-title">
+                    <div>
+                        <h1>Verification Overview</h1>
+                        <div class="muted">Review completed work before complaints are closed.</div>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="label">Pending Verification</div>
+                        <div class="value">14</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Approved Today</div>
+                        <div class="value">9</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Reopened</div>
+                        <div class="value">3</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Escalated</div>
+                        <div class="value">6</div>
+                    </div>
+                </div>
+                <div class="two-col">
+                    <div class="panel">
+                        <div class="panel-head">
+                            <h3>Pending Verification</h3><a href="pending.html" class="btn btn-light btn-sm">View
+                                all</a>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Complaint</th>
+                                    <th>Officer</th>
+                                    <th>Submitted</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>CIV-2026-00128</b><br>Waterlogging near Ward 21</td>
+                                    <td>Nafis Islam</td>
+                                    <td>Today</td>
+                                    <td><a href="verification.html" class="btn btn-primary btn-sm">Review</a></td>
+                                </tr>
+                                <tr>
+                                    <td><b>CIV-2026-00105</b><br>Broken streetlight</td>
+                                    <td>Sabbir Ahmed</td>
+                                    <td>Yesterday</td>
+                                    <td><a href="verification.html" class="btn btn-primary btn-sm">Review</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="panel">
+                            <h3>Escalations</h3>
+                            <div style="font-size:32px;font-weight:800;color:var(--danger)">6</div>
+                            <p class="muted">Complaints exceeded the resolution threshold.</p><a
+                                class="btn btn-danger btn-sm" href="escalations.html">Manage Escalations</a>
+                        </div>
+                        <div class="panel">
+                            <h3>Verification rate</h3>
+                            <div style="font-size:28px;font-weight:800">92%</div>
+                            <div class="progress"><span style="width:92%"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

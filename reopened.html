@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reopened Complaints — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Supervisor</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="pending.html"><span>✓</span>Pending Verification</a>
+            <a class="side-link " href="verification.html"><span>◉</span>Verification Details</a>
+            <a class="side-link active" href="reopened.html"><span>↻</span>Reopened Complaints</a>
+            <a class="side-link " href="escalations.html"><span>⚠</span>Escalations</a>
+            <a class="side-link " href="civic-points.html"><span>★</span>Civic Points</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Reopened Complaints</b>
+                    <div class="muted" style="font-size:11px">Cases returned for further work</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Supervisor</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">S</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="panel">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Complaint</th>
+                                <th>Reason</th>
+                                <th>Officer</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>CIV-2026-00088</b><br>Garbage accumulation</td>
+                                <td>Evidence insufficient</td>
+                                <td>Rafi Hasan</td>
+                                <td><span class="badge badge-red">Reopened</span></td>
+                                <td><button class="btn btn-light btn-sm"
+                                        data-toast="Complaint details opened">Review</button></td>
+                            </tr>
+                            <tr>
+                                <td><b>CIV-2026-00073</b><br>Road damage</td>
+                                <td>Issue not fully resolved</td>
+                                <td>Nafis Islam</td>
+                                <td><span class="badge badge-red">Reopened</span></td>
+                                <td><button class="btn btn-light btn-sm">Review</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

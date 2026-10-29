@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Verification Details — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Supervisor</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="pending.html"><span>✓</span>Pending Verification</a>
+            <a class="side-link active" href="verification.html"><span>◉</span>Verification Details</a>
+            <a class="side-link " href="reopened.html"><span>↻</span>Reopened Complaints</a>
+            <a class="side-link " href="escalations.html"><span>⚠</span>Escalations</a>
+            <a class="side-link " href="civic-points.html"><span>★</span>Civic Points</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Verification Details</b>
+                    <div class="muted" style="font-size:11px">CIV-2026-00128</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Supervisor</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">S</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-title">
+                    <div>
+                        <h1>Verify Resolution</h1>
+                        <div class="muted">CIV-2026-00128 · Waterlogging near Ward 21</div>
+                    </div><span class="badge badge-yellow">Awaiting Verification</span>
+                </div>
+                <div class="two-col">
+                    <div>
+                        <div class="panel">
+                            <h3>Field Officer Report</h3>
+                            <p><b>Officer:</b> Nafis Islam</p>
+                            <p><b>Resolution:</b> Drainage blockage was cleared and standing water was removed from the
+                                affected section.</p>
+                            <p><b>Completed:</b> Sep 15, 2026 · 10:15 AM</p>
+                        </div>
+                        <div class="panel">
+                            <h3>Evidence</h3>
+                            <div
+                                style="height:230px;background:#e8f0ed;border-radius:12px;display:grid;place-items:center;font-size:50px">
+                                🖼️</div>
+                            <p class="muted">Before / after evidence submitted by officer.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="panel">
+                            <h3>Verification Decision</h3>
+                            <p class="muted">Check the work and evidence before closing the complaint.</p><button
+                                class="btn btn-primary" style="width:100%;margin-bottom:10px"
+                                data-toast="Resolution approved — complaint closed">✓ Approve & Close</button><button
+                                class="btn btn-warning" style="width:100%;margin-bottom:10px"
+                                data-toast="Resolution rejected — complaint reopened">↻ Reject & Reopen</button><button
+                                class="btn btn-danger" style="width:100%" data-toast="Further work requested">⚠ Request
+                                Further Action</button>
+                            <div class="field" style="margin-top:18px"><label>Verification note</label><textarea
+                                    class="textarea" placeholder="Optional note..."></textarea></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

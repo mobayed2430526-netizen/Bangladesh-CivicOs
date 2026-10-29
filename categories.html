@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Complaint Categories — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">System Admin</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="users.html"><span>♟</span>Users</a>
+            <a class="side-link " href="departments.html"><span>▦</span>Departments</a>
+            <a class="side-link active" href="categories.html"><span>☷</span>Categories</a>
+            <a class="side-link " href="analytics.html"><span>▥</span>Analytics</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Complaint Categories</b>
+                    <div class="muted" style="font-size:11px">Categories used for routing</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">System Admin</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">S</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="panel">
+                    <div class="panel-head">
+                        <h3>Categories</h3><button class="btn btn-primary btn-sm">＋ Add Category</button>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Department</th>
+                                <th>Complaints</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Broken Road</td>
+                                <td>Road & Drainage</td>
+                                <td>2,841</td>
+                                <td><span class="badge badge-green">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Garbage</td>
+                                <td>Waste Management</td>
+                                <td>2,110</td>
+                                <td><span class="badge badge-green">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Waterlogging</td>
+                                <td>Road & Drainage</td>
+                                <td>1,602</td>
+                                <td><span class="badge badge-green">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Streetlight</td>
+                                <td>Electrical Services</td>
+                                <td>1,209</td>
+                                <td><span class="badge badge-green">Active</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

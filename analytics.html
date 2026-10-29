@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Analytics & Reports — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">System Admin</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="users.html"><span>♟</span>Users</a>
+            <a class="side-link " href="departments.html"><span>▦</span>Departments</a>
+            <a class="side-link " href="categories.html"><span>☷</span>Categories</a>
+            <a class="side-link active" href="analytics.html"><span>▥</span>Analytics</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Analytics & Reports</b>
+                    <div class="muted" style="font-size:11px">System-wide performance</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">System Admin</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">S</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="stats">
+                    <div class="stat">
+                        <div class="label">Resolution Rate</div>
+                        <div class="value">86%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Avg. Resolution</div>
+                        <div class="value">4.1d</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Verified</div>
+                        <div class="value">7,910</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Escalated</div>
+                        <div class="value">412</div>
+                    </div>
+                </div>
+                <div class="kpi-grid">
+                    <div class="panel">
+                        <h3>Monthly complaint trend</h3>
+                        <div class="chart-placeholder"><i style="height:42%"></i><i style="height:55%"></i><i
+                                style="height:48%"></i><i style="height:68%"></i><i style="height:75%"></i><i
+                                style="height:70%"></i><i style="height:88%"></i><i style="height:92%"></i></div>
+                    </div>
+                    <div class="panel">
+                        <h3>Department performance</h3>
+                        <p>Road & Drainage <b style="float:right">91%</b></p>
+                        <div class="bar"><span style="width:91%"></span></div>
+                        <p>Waste Management <b style="float:right">87%</b></p>
+                        <div class="bar"><span style="width:87%"></span></div>
+                        <p>Electrical <b style="float:right">82%</b></p>
+                        <div class="bar"><span style="width:82%"></span></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

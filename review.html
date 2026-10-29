@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Complaint Review — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Department Manager</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="new-complaints.html"><span>▤</span>New Complaints</a>
+            <a class="side-link active" href="review.html"><span>◉</span>Complaint Review</a>
+            <a class="side-link " href="assign-officer.html"><span>➜</span>Assign Officer</a>
+            <a class="side-link " href="officers.html"><span>👷</span>Officers</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Complaint Review</b>
+                    <div class="muted" style="font-size:11px">CIV-2026-00142</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Department Manager</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">D</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-title">
+                    <div>
+                        <h1>Pothole on Main Road</h1>
+                        <div class="muted">CIV-2026-00142 · Submitted 1 hour ago</div>
+                    </div><span class="badge badge-red">Urgent</span>
+                </div>
+                <div class="two-col">
+                    <div class="panel">
+                        <h3>Complaint Information</h3>
+                        <p><b>Description</b><br>Deep pothole causing traffic disruption and risk for motorcycles.</p>
+                        <p><b>Category:</b> Broken Road</p>
+                        <p><b>Location:</b> Mirpur 10, Ward 14, Dhaka</p>
+                        <div
+                            style="height:200px;border-radius:12px;background:#e7efe9;display:grid;place-items:center;font-size:35px">
+                            📍 Map Location</div>
+                    </div>
+                    <div class="panel">
+                        <h3>Assignment</h3>
+                        <p class="muted">Select a Field Officer to handle this complaint.</p><select class="select">
+                            <option>Nafis Islam — 8/10</option>
+                            <option>Sabbir Ahmed — 5/10</option>
+                            <option>Rafi Hasan — 9/10</option>
+                        </select><button class="btn btn-primary" style="width:100%;margin-top:15px"
+                            data-toast="Officer assigned successfully">Assign Officer</button>
+                        <hr style="border:0;border-top:1px solid var(--border);margin:25px 0">
+                        <h4>Citizen</h4>
+                        <p>Fatin Hasnat<br><span class="muted">Submitted via CivicOS</span></p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

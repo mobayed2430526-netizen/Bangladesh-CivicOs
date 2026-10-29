@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Civic Points Management — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Supervisor</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="pending.html"><span>✓</span>Pending Verification</a>
+            <a class="side-link " href="verification.html"><span>◉</span>Verification Details</a>
+            <a class="side-link " href="reopened.html"><span>↻</span>Reopened Complaints</a>
+            <a class="side-link " href="escalations.html"><span>⚠</span>Escalations</a>
+            <a class="side-link active" href="civic-points.html"><span>★</span>Civic Points</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Civic Points Management</b>
+                    <div class="muted" style="font-size:11px">Monitor citizen participation and point transactions</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Supervisor</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">S</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="stats">
+                    <div class="stat">
+                        <div class="label">Points Issued</div>
+                        <div class="value">18,420</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Active Citizens</div>
+                        <div class="value">2,840</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Verified Reports</div>
+                        <div class="value">1,290</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Avg. Points / Report</div>
+                        <div class="value">62</div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h3>Recent Point Transactions</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Citizen</th>
+                                <th>Activity</th>
+                                <th>Points</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fatin Hasnat</td>
+                                <td>Verified complaint</td>
+                                <td>+80</td>
+                                <td>Today</td>
+                            </tr>
+                            <tr>
+                                <td>Mahjabin Obayed</td>
+                                <td>Useful evidence</td>
+                                <td>+40</td>
+                                <td>Today</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

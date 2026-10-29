@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>User Management — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">System Admin</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link active" href="users.html"><span>♟</span>Users</a>
+            <a class="side-link " href="departments.html"><span>▦</span>Departments</a>
+            <a class="side-link " href="categories.html"><span>☷</span>Categories</a>
+            <a class="side-link " href="analytics.html"><span>▥</span>Analytics</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>User Management</b>
+                    <div class="muted" style="font-size:11px">Manage accounts and roles</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">System Admin</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">S</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-title">
+                    <div>
+                        <h1>Users</h1>
+                        <div class="muted">3,428 registered accounts</div>
+                    </div><button class="btn btn-primary">＋ Add User</button>
+                </div>
+                <div class="panel"><input class="input search" data-filter="#usersTable" placeholder="Search users..."
+                        style="margin-bottom:15px">
+                    <table class="table" id="usersTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fatin Hasnat</td>
+                                <td>fatin@example.com</td>
+                                <td>Citizen</td>
+                                <td><span class="badge badge-green">Active</span></td>
+                                <td><button class="btn btn-light btn-sm">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>Nafis Islam</td>
+                                <td>nafis@example.com</td>
+                                <td>Field Officer</td>
+                                <td><span class="badge badge-green">Active</span></td>
+                                <td><button class="btn btn-light btn-sm">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

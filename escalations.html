@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Escalation Management — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Supervisor</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="pending.html"><span>✓</span>Pending Verification</a>
+            <a class="side-link " href="verification.html"><span>◉</span>Verification Details</a>
+            <a class="side-link " href="reopened.html"><span>↻</span>Reopened Complaints</a>
+            <a class="side-link active" href="escalations.html"><span>⚠</span>Escalations</a>
+            <a class="side-link " href="civic-points.html"><span>★</span>Civic Points</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Escalation Management</b>
+                    <div class="muted" style="font-size:11px">Complaints that exceeded expected resolution time</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Supervisor</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">S</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="alert alert-warning"><b>6 complaints need attention.</b> These cases have remained
+                    unresolved beyond the configured threshold.</div>
+                <div class="panel">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Complaint</th>
+                                <th>Age</th>
+                                <th>Officer</th>
+                                <th>Department</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CIV-2026-00071 — Drainage issue</td>
+                                <td><span class="badge badge-red">9 days</span></td>
+                                <td>Rafi Hasan</td>
+                                <td>Road & Drainage</td>
+                                <td><button class="btn btn-warning btn-sm"
+                                        data-toast="Escalation action recorded">Escalate</button></td>
+                            </tr>
+                            <tr>
+                                <td>CIV-2026-00064 — Streetlight</td>
+                                <td><span class="badge badge-red">8 days</span></td>
+                                <td>Sabbir Ahmed</td>
+                                <td>Electrical</td>
+                                <td><button class="btn btn-warning btn-sm">Escalate</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

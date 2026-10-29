@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Complaint Details — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Field Officer</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="assigned.html"><span>▤</span>Assigned Complaints</a>
+            <a class="side-link active" href="complaint-details.html"><span>◉</span>Complaint Details</a>
+            <a class="side-link " href="work-update.html"><span>✎</span>Work Update</a>
+            <a class="side-link " href="resolution.html"><span>✓</span>Resolution</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Complaint Details</b>
+                    <div class="muted" style="font-size:11px">CIV-2026-00128</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Field Officer</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">F</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-title">
+                    <div>
+                        <h1>Waterlogging near Ward 21</h1>
+                        <div class="muted">CIV-2026-00128 · Citizen: Fatin Hasnat</div>
+                    </div><span class="badge badge-blue">In Progress</span>
+                </div>
+                <div class="two-col">
+                    <div>
+                        <div class="panel">
+                            <h3>Issue</h3>
+                            <p>Heavy waterlogging beside the main road near Ward 21.</p>
+                            <p>📍 Mirpur, Ward 21, Dhaka</p>
+                            <div
+                                style="height:190px;background:#e8f0ed;border-radius:12px;display:grid;place-items:center;font-size:30px">
+                                📍 Field Location</div>
+                        </div>
+                        <div class="panel">
+                            <h3>Work Log</h3>
+                            <div class="timeline">
+                                <div class="event">
+                                    <h4>Site inspection completed</h4>
+                                    <p>Today · Added note and photo evidence</p>
+                                </div>
+                                <div class="event">
+                                    <h4>Started work</h4>
+                                    <p>Today · 10:20 AM</p>
+                                </div>
+                                <div class="event">
+                                    <h4>Assigned</h4>
+                                    <p>Sep 13 · Department Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="panel">
+                            <h3>Update status</h3><select class="select">
+                                <option>In Progress</option>
+                                <option>Resolved</option>
+                            </select><a class="btn btn-primary" style="width:100%;margin-top:12px"
+                                href="work-update.html">Update Work</a>
+                        </div>
+                        <div class="panel">
+                            <h3>Resolution</h3>
+                            <p class="muted">When the work is complete, submit details and evidence for supervisor
+                                verification.</p><a class="btn btn-light" href="resolution.html">Submit Resolution</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

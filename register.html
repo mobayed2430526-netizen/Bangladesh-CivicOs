@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Registration — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="auth-page">
+    <div class="auth-page">
+        <div class="auth-wrap">
+            <div class="auth-side"><a class="brand" href="../index.html" style="color:#fff"><span
+                        class="brand-mark">C</span>CivicOS</a>
+                <h1>Make your community better.</h1>
+                <p>Create a citizen account and start reporting civic problems with evidence and location.</p>
+                <div style="margin-top:35px">🏆 Earn Civic Points for meaningful participation.</div>
+            </div>
+            <div class="auth-form">
+                <h2>Create your account</h2>
+                <p class="muted">Register as a citizen to submit and track complaints.</p>
+                <form onsubmit="event.preventDefault();location.href='citizen/dashboard.html'">
+                    <div class="form-row">
+                        <div class="field"><label>First name</label><input class="input" required
+                                placeholder="First name"></div>
+                        <div class="field"><label>Last name</label><input class="input" required
+                                placeholder="Last name"></div>
+                    </div>
+                    <div class="field"><label>Email</label><input class="input" type="email" required
+                            placeholder="you@example.com"></div>
+                    <div class="field"><label>Phone</label><input class="input" required placeholder="01XXXXXXXXX">
+                    </div>
+                    <div class="form-row">
+                        <div class="field"><label>Password</label><input class="input" type="password" required></div>
+                        <div class="field"><label>Confirm password</label><input class="input" type="password" required>
+                        </div>
+                    </div><label class="check"><input type="checkbox" required> I agree to the terms and responsible
+                        reporting policy.</label><br><button class="btn btn-primary" style="width:100%">Create Citizen
+                        Account</button>
+                </form>
+                <div class="auth-foot">Already registered? <a href="login.html"
+                        style="color:var(--primary);font-weight:700">Sign in</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

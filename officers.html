@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Field Officer Management — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Department Manager</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="new-complaints.html"><span>▤</span>New Complaints</a>
+            <a class="side-link " href="review.html"><span>◉</span>Complaint Review</a>
+            <a class="side-link " href="assign-officer.html"><span>➜</span>Assign Officer</a>
+            <a class="side-link active" href="officers.html"><span>👷</span>Officers</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Field Officer Management</b>
+                    <div class="muted" style="font-size:11px">Officers in your department</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Department Manager</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">D</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-title">
+                    <div>
+                        <h1>Field Officers</h1>
+                        <div class="muted">Monitor availability and workload.</div>
+                    </div><button class="btn btn-primary">＋ Add Officer</button>
+                </div>
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="avatar">N</div>
+                        <h3>Nafis Islam</h3>
+                        <p class="muted">Field Officer · Active</p>
+                        <p>Assigned cases <b style="float:right">8 / 10</b></p>
+                        <div class="progress"><span style="width:80%"></span></div><br><span
+                            class="badge badge-green">Available</span>
+                    </div>
+                    <div class="card">
+                        <div class="avatar">S</div>
+                        <h3>Sabbir Ahmed</h3>
+                        <p class="muted">Field Officer · Active</p>
+                        <p>Assigned cases <b style="float:right">5 / 10</b></p>
+                        <div class="progress"><span style="width:50%"></span></div><br><span
+                            class="badge badge-green">Available</span>
+                    </div>
+                    <div class="card">
+                        <div class="avatar">R</div>
+                        <h3>Rafi Hasan</h3>
+                        <p class="muted">Field Officer · Active</p>
+                        <p>Assigned cases <b style="float:right">9 / 10</b></p>
+                        <div class="progress"><span style="width:90%"></span></div><br><span
+                            class="badge badge-yellow">Near Capacity</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

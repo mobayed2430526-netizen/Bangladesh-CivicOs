@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Assign Officer — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Department Manager</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="new-complaints.html"><span>▤</span>New Complaints</a>
+            <a class="side-link " href="review.html"><span>◉</span>Complaint Review</a>
+            <a class="side-link active" href="assign-officer.html"><span>➜</span>Assign Officer</a>
+            <a class="side-link " href="officers.html"><span>👷</span>Officers</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Assign Officer</b>
+                    <div class="muted" style="font-size:11px">Route a complaint to a Field Officer</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Department Manager</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">D</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="panel" style="max-width:720px">
+                    <h3>Assign CIV-2026-00142</h3>
+                    <p class="muted">Pothole on Main Road · Mirpur 10 · Broken Road</p>
+                    <div class="field"><label>Field Officer</label><select class="select">
+                            <option>Nafis Islam — 8/10 workload</option>
+                            <option>Sabbir Ahmed — 5/10 workload</option>
+                            <option>Rafi Hasan — 9/10 workload</option>
+                        </select></div>
+                    <div class="alert alert-warning">Rafi Hasan is close to the recommended workload limit.</div>
+                    <div class="field"><label>Assignment note</label><textarea class="textarea"
+                            placeholder="Optional instructions for the officer..."></textarea></div><button
+                        class="btn btn-primary" data-toast="Complaint assigned to selected officer">Confirm
+                        Assignment</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

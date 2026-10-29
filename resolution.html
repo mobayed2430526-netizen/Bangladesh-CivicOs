@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Submit Resolution — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="">
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark">C</span>CivicOS</a>
+            <div class="side-label">Field Officer</div><a class="side-link "
+                href="dashboard.html"><span>⌂</span>Dashboard</a>
+            <a class="side-link " href="assigned.html"><span>▤</span>Assigned Complaints</a>
+            <a class="side-link " href="complaint-details.html"><span>◉</span>Complaint Details</a>
+            <a class="side-link " href="work-update.html"><span>✎</span>Work Update</a>
+            <a class="side-link active" href="resolution.html"><span>✓</span>Resolution</a>
+            <div class="side-label">Account</div><a class="side-link" href="../index.html">↪ Sign out</a>
+        </aside>
+        <div class="main">
+            <header class="topnav"><button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+                <div><b>Submit Resolution</b>
+                    <div class="muted" style="font-size:11px">Mark a complaint as resolved and submit evidence</div>
+                </div>
+                <div class="user">
+                    <div><b style="font-size:13px">Field Officer</b>
+                        <div class="muted" style="font-size:11px">Demo Account</div>
+                    </div>
+                    <div class="avatar">F</div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="two-col">
+                    <div class="panel">
+                        <h3>Resolution Details</h3>
+                        <p class="muted">CIV-2026-00128 · Waterlogging near Ward 21</p>
+                        <div class="field"><label>Resolution summary *</label><textarea class="textarea" required
+                                placeholder="Explain how the issue was resolved..."></textarea></div>
+                        <div class="field"><label>Completion date</label><input class="input" type="date"></div>
+                        <div class="field"><label>Resolution evidence *</label><input class="input" type="file"
+                                accept="image/*" required></div><button class="btn btn-primary"
+                            data-toast="Resolution submitted for supervisor verification">Submit for
+                            Verification</button>
+                    </div>
+                    <div class="panel">
+                        <h3>Next step</h3>
+                        <div class="alert alert-success">After submission, the Supervisor will review your work and
+                            evidence.</div>
+                        <div class="step-num">✓</div>
+                        <p><b>Supervisor Verification</b></p>
+                        <p class="muted">The complaint will only be closed after approval.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

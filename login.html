@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login — Bangladesh CivicOS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="auth-page">
+        <div class="auth-wrap">
+            <div class="auth-side animate-fade delay-100"><a class="brand" href="index.html" style="color:#fff"><span
+                        class="brand-mark">C</span>Bangladesh CivicOS</a>
+                <h1>One platform.<br>Every civic issue.</h1>
+                <p>Sign in to report issues, manage complaints, resolve field work, or verify completed resolutions.</p>
+                <div style="margin-top:35px">
+                    <div>✓ Role-based access</div>
+                    <div>✓ Complaint tracking</div>
+                    <div>✓ Verified resolution</div>
+                </div>
+            </div>
+            <div class="auth-form animate-slide-in-right delay-200">
+                <h2>Welcome back</h2>
+                <p class="muted">Sign in to your CivicOS account.</p>
+                <form onsubmit="event.preventDefault();location.href='citizen/dashboard.html'">
+                    <div class="field"><label>Email or phone</label><input class="input" required
+                            placeholder="you@example.com"></div>
+                    <div class="field"><label>Password</label><input class="input" required type="password"
+                            placeholder="••••••••"></div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin:15px 0"><label
+                            class="check"><input type="checkbox"> Remember me</label><a href="#"
+                            style="color:var(--primary);font-size:13px">Forgot password?</a></div><button
+                        class="btn btn-primary" style="width:100%">Sign In</button>
+                </form>
+                <div class="auth-foot">Don't have an account? <a href="register.html"
+                        style="color:var(--primary);font-weight:700">Create one</a><br><br><a href="index.html">←
+                        Back to CivicOS</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
